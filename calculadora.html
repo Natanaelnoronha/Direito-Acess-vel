@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direito Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+              <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="direitos.html">Seus Direitos</a>
+          <ul class="dropdown-content">
+            <li><a href="clt.html">CLT</a></li>
+            <li><a href="pj.html">PJ</a></li>
+            <li><a href="contrato.html">Contratos</a></li>
+          </ul>
+        </li>
+        <li><a href="calculadora.html">Calculadora Trabalhista</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Direito Acessível</a></li>
+        <li class="hideOnMobile dropdown">
+          <a href="direitos.html">Seus Direitos</a>
+          <ul class="dropdown-content">
+            <li><a href="clt.html">CLT</a></li>
+            <li><a href="pj.html">PJ</a></li>
+            <li><a href="contrato.html">Contratos</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="calculadora.html">Calculadora Trabalhista</a></li>
+        <li class="hideOnMobile"><a href="sobre.html">Sobre nós</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content">
+    <div class="container">
+      <h1>Calculadora Trabalhista</h1>
+      <div class="tabs">
+        <button class="tab-button" onclick="showTab('ferias')">Férias</button>
+        <button class="tab-button" onclick="showTab('decimo')">Décimo Terceiro</button>
+        <button class="tab-button" onclick="showTab('horas')">Horas Extras</button>
+      </div>
+
+      <div id="ferias" class="tab-content">
+        <h2>Cálculo de Férias</h2>
+        <label for="salario-ferias">Salário:</label>
+        <input type="number" id="salario-ferias" placeholder="Digite seu salário">
+        <button onclick="calcularFerias()">Calcular</button>
+        <p id="resultado-ferias"></p>
+      </div>
+
+      <div id="decimo" class="tab-content" style="display:none;">
+        <h2>Cálculo de Décimo Terceiro</h2>
+        <label for="salario-decimo">Salário:</label>
+        <input type="number" id="salario-decimo" placeholder="Digite seu salário">
+        <label for="meses-decimo">Meses trabalhados:</label>
+        <input type="number" id="meses-decimo" placeholder="Meses trabalhados (1 a 12)">
+        <button onclick="calcularDecimo()">Calcular</button>
+        <p id="resultado-decimo"></p>
+      </div>
+
+      <div id="horas" class="tab-content" style="display:none;">
+        <h2>Cálculo de Horas Extras</h2>
+        <label for="salario-horas">Salário:</label>
+        <input type="number" id="salario-horas" placeholder="Digite seu salário">
+        <label for="horas-extras">Horas extras trabalhadas:</label>
+        <input type="number" id="horas-extras" placeholder="Horas extras">
+        <button onclick="calcularHorasExtras()">Calcular</button>
+        <p id="resultado-horas"></p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Direito Acessível</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                  <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="direitos.html">Seus Direitos</a>
+              <ul class="dropdown-content">
+                <li><a href="clt.html">CLT</a></li>
+                <li><a href="pj.html">PJ</a></li>
+                <li><a href="contrato.html">Contratos</a></li>
+              </ul>
+            </li>
+            <li><a href="calculadora.html">Calculadora Trabalhista</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+          </ul>
+          <ul>
+            <li><a href="index.html">Direito Acessível</a></li>
+            <li class="hideOnMobile dropdown">
+              <a href="direitos.html">Seus Direitos</a>
+              <ul class="dropdown-content">
+                <li><a href="clt.html">CLT</a></li>
+                <li><a href="pj.html">PJ</a></li>
+                <li><a href="contrato.html">Contratos</a></li>
+              </ul>
+            </li>
+            <li class="hideOnMobile"><a href="calculadora.html">Calculadora Trabalhista</a></li>
+            <li class="hideOnMobile"><a href="sobre.html">Sobre nós</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                  <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content fade-in">
+        <h2> Qual vínculo empregativo você deseja saber mais?</h2>
+      
+        <div class="direito">
+          <h3><a href="clt.html">Carteira de Trabalho</a></h3>
+          <p>Aqui você encontrará informações essenciais sobre os direitos garantidos aos trabalhadores pela Consolidação das Leis do Trabalho (CLT). Nossa missão é esclarecer como a legislação brasileira protege os direitos dos empregados, como salários, férias, licenças e outras vantagens, com base na Carteira de Trabalho. Navegue pelas nossas seções para entender melhor seus direitos e como eles se aplicam no seu dia a dia profissional.</p>
+        </div>
+      
+        <div class="direito">
+          <h3><a href="pj.html">Pessoa Jurídica (PJ)</a></h3>
+          <p>Aqui, você encontrará informações importantes sobre os direitos e responsabilidades dos profissionais que atuam como Pessoa Jurídica (PJ). Através deste espaço, buscamos esclarecer como funciona a relação de trabalho para quem opta por prestar serviços como empresa, sem vínculo empregatício, e quais as implicações legais e benefícios desse modelo. Explore nossas seções para entender melhor as vantagens e os cuidados necessários ao trabalhar como PJ.</p>
+        </div>
+
+        <div class="direito">
+          <h3><a href="contrato.html">Contratos Temporários</a></h3>
+          <p>Aqui você encontrará informações sobre contratos de trabalho temporário, uma modalidade que oferece flexibilidade tanto para empregador quanto para empregado. Através deste espaço, buscamos explicar os direitos e deveres das partes envolvidas, como a duração do contrato, as condições de renovação e os benefícios garantidos por lei. Navegue pelas nossas seções e compreenda como funcionam os contratos temporários e como eles podem ser uma solução vantajosa para diferentes necessidades profissionais.</p>
+        </div>
+      
+      </main>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
